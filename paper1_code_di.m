@@ -53,5 +53,5 @@ str = {'\itM = \rm48; \it\Deltax = \rm5 m','\itso = \rm5 m'};
 annotation('textbox',dim,'String',str,'FitBoxToText','on',...
     'BackgroundColor','w','EdgeColor','k');
 
-% The follong command in next line can be used to save W, Wn, f and c in dispersion_image_data.mat file
-% save('dispersion_image.data','W','Wn','f','c');
+% The follong command in next line can be used to save Wn, f and c in dispersion_image_data.mat file
+% save('dispersion_image.data','Wn','f','c');
