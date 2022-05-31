@@ -69,20 +69,21 @@ end
 % Repeat the above code for calculating quality factor for different modes...
 % for the choosen frequency fr
 
-% plot of modes (wn) for chosen frequency.
+% plot of wn (modes) for chosen frequency.
 wn(wn<tv)=NaN;
 figure; box on;
 hold on;
 p=plot(c(ci:cf),wn(ci:cf)); p.Color='k';
-r=plot([c(ci) c(cf)], [0.35 0.35]); r.Color='r';
+r=plot([c(ci) c(cf)], [tv tv]); r.Color='r';
 for i=1:length(q)
-    ln=line([q(i) q(i)], [0 0.35]);
+    ln=line([q(i) q(i)], [0 tv]);
     ln.Color='b';
 end
 hold off;
-legend(r,{'Wn = 0.35'});
+wnl = sprintf('Wn = %.2f',tv);
+legend(r,wnl);
 dim=[.7 .75 .1 .1];
-str = {'\rmfr = ' num2str(fr)};
+str = ['\rmfr = ' num2str(fr) ' Hz'];
 annotation('textbox',dim,'String',str,'FitBoxToText','on',...
     'BackgroundColor','w','EdgeColor','k');
 xlim([c(ci) c(cf)]); ylim([0 1]);
