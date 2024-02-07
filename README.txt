@@ -2,7 +2,7 @@ DispersionCodes
 
 Title of the manuscript:
 
-On assessing and improving the quality of dispersion images using the MASW technique for ground exploration
+Assessing and Improving the Quality of Dispersion Images Using the MASW Technique for Ground Exploration
 
 Authors:
 Abdullah Talib, Jyant Kumar
